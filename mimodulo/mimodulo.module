@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains mimodulo.module
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+
+function mimodulo_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    // Main module help for the mimodulo module.
+    case 'help.page.mimodulo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+    break;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+
+function mimodulo_theme()
+{
+  $theme = [];
+
+  return $theme;
+}
