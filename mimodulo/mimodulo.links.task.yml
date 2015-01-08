@@ -4,17 +4,18 @@ mi_entidad.settings_tab:
   title: 'Settings'
   base_route: mi_entidad.settings
 
-mi_entidad.view:
-  route_name: mi_entidad.view
-  base_route: mi_entidad.view
+entity.mi_entidad.canonical:
+  route_name: entity.mi_entidad.canonical
+  base_route: entity.mi_entidad.canonical
   title: 'View'
 
-mi_entidad.edit:
-  route_name: mi_entidad.edit
-  base_route: mi_entidad.view
+entity.mi_entidad.edit_form:
+  route_name: entity.mi_entidad.edit_form
+  base_route: entity.mi_entidad.canonical
   title: Edit
 
-mi_entidad.delete_confirm:
-  route_name:  mi_entidad.delete
-  base_route:  mi_entidad.view
+entity.mi_entidad.delete_form:
+  route_name:  entity.mi_entidad.delete_form
+  base_route:  entity.mi_entidad.canonical
   title: Delete
+

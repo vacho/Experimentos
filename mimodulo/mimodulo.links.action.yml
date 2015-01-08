@@ -1,6 +1,7 @@
-mi_entidad.add:
-  route_name: mi_entidad.add
+entity.mi_entidad.add_form:
+  route_name: entity.mi_entidad.add_form
   title: 'Add MiEntidad'
   appears_on:
-    - mi_entidad.list
-    - mi_entidad.view
+    - entity.mi_entidad.list
+    - entity.mi_entidad.canonical
+

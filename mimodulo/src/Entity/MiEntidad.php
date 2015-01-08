@@ -43,10 +43,9 @@ use Drupal\user\UserInterface;
  *     "uuid" = "uuid"
  *   },
  *   links = {
- *     "canonical" = "mi_entidad.view",
- *     "edit-form" = "mi_entidad.edit",
- *     "admin-form" = "mi_entidad.settings",
- *     "delete-form" = "mi_entidad.delete"
+ *     "canonical" = "entity.mi_entidad.canonical",
+ *     "edit-form" = "entity.mi_entidad.edit_form",
+ *     "delete-form" = "entity.mi_entidad.delete_form"
  *   },
  *   field_ui_base_route = "mi_entidad.settings"
  * )

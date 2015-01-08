@@ -1,7 +1,7 @@
 # MiEntidad menu items definition
-mi_entidad.list:
+entity.mi_entidad.list:
   title: 'MiEntidad: Listing'
-  route_name: mi_entidad.list
+  route_name: entity.mi_entidad.list
   description: 'List MiEntidad'
 
 mi_entidad.admin.structure.settings:
@@ -9,3 +9,4 @@ mi_entidad.admin.structure.settings:
   description: 'Configure MiEntidad entity'
   route_name:  mi_entidad.settings
   parent: system.admin_structure
+

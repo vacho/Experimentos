@@ -1,5 +1,5 @@
 # MiEntidad routing definition
-mi_entidad.view:
+entity.mi_entidad.canonical:
   path: '/admin/mi_entidad/{mi_entidad}'
   defaults:
     _entity_view: 'mi_entidad'
@@ -7,7 +7,7 @@ mi_entidad.view:
   requirements:
     _entity_access: 'mi_entidad.view'
 
-mi_entidad.list:
+entity.mi_entidad.list:
   path: '/admin/mi_entidad'
   defaults:
     _entity_list: 'mi_entidad'
@@ -15,7 +15,7 @@ mi_entidad.list:
   requirements:
     _permission: 'view MiEntidad entity'
 
-mi_entidad.add:
+entity.mi_entidad.add_form:
   path: '/admin/mi_entidad/add'
   defaults:
     _entity_form: mi_entidad.add
@@ -23,7 +23,7 @@ mi_entidad.add:
   requirements:
     _entity_create_access: 'mi_entidad'
 
-mi_entidad.edit:
+entity.mi_entidad.edit_form:
   path: '/admin/mi_entidad/{mi_entidad}/edit'
   defaults:
     _entity_form: mi_entidad.edit
@@ -31,7 +31,7 @@ mi_entidad.edit:
   requirements:
     _entity_access: 'mi_entidad.edit'
 
-mi_entidad.delete:
+entity.mi_entidad.delete_form:
   path: '/admin/mi_entidad/{mi_entidad}/delete'
   defaults:
     _entity_form: mi_entidad.delete
@@ -46,3 +46,4 @@ mi_entidad.settings:
    _title: 'MiEntidad Settings'
   requirements:
     _permission: 'administer MiEntidad entity'
+

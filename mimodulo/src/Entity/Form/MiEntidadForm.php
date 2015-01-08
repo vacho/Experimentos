@@ -52,6 +52,18 @@ class MiEntidadForm extends ContentEntityForm
    */
   public function save(array $form, FormStateInterface $form_state) {
     $entity = $this->entity;
-    $entity->save();
+    $status = $entity->save();
+
+    if ($status) {
+      drupal_set_message($this->t('Saved the %label MiEntidad.', array(
+        '%label' => $entity->label(),
+      )));
+    }
+    else {
+      drupal_set_message($this->t('The %label MiEntidad was not saved.', array(
+        '%label' => $entity->label(),
+      )));
+    }
+    $form_state->setRedirect('entity.mi_entidad.edit_form', ['mi_entidad' => $entity->id()]);
   }
 }

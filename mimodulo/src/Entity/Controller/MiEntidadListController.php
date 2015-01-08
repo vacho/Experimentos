@@ -37,7 +37,7 @@ class MiEntidadListController extends EntityListBuilder
     $row['name'] = \Drupal::l(
         $this->getLabel($entity),
         new Url(
-          'mi_entidad.edit', array(
+          'entity.mi_entidad.edit_form', array(
             'mi_entidad' => $entity->id(),
         )
       )
