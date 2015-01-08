@@ -1,0 +1,48 @@
+# MiEntidad routing definition
+mi_entidad.view:
+  path: '/admin/mi_entidad/{mi_entidad}'
+  defaults:
+    _entity_view: 'mi_entidad'
+    _title: 'MiEntidad Content'
+  requirements:
+    _entity_access: 'mi_entidad.view'
+
+mi_entidad.list:
+  path: '/admin/mi_entidad'
+  defaults:
+    _entity_list: 'mi_entidad'
+    _title: 'MiEntidad List'
+  requirements:
+    _permission: 'view MiEntidad entity'
+
+mi_entidad.add:
+  path: '/admin/mi_entidad/add'
+  defaults:
+    _entity_form: mi_entidad.add
+    _title: 'Add MiEntidad'
+  requirements:
+    _entity_create_access: 'mi_entidad'
+
+mi_entidad.edit:
+  path: '/admin/mi_entidad/{mi_entidad}/edit'
+  defaults:
+    _entity_form: mi_entidad.edit
+    _title: 'Edit MiEntidad'
+  requirements:
+    _entity_access: 'mi_entidad.edit'
+
+mi_entidad.delete:
+  path: '/admin/mi_entidad/{mi_entidad}/delete'
+  defaults:
+    _entity_form: mi_entidad.delete
+    _title: 'Delete MiEntidad'
+  requirements:
+    _entity_access: 'mi_entidad.delete'
+
+mi_entidad.settings:
+  path: 'admin/structure/mi_entidad'
+  defaults:
+   _form: '\Drupal\mimodulo\Entity\Form\MiEntidadSettingsForm'
+   _title: 'MiEntidad Settings'
+  requirements:
+    _permission: 'administer MiEntidad entity'

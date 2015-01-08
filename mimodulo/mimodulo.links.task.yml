@@ -1,0 +1,20 @@
+# MiEntidad routing definition
+mi_entidad.settings_tab:
+  route_name: mi_entidad.settings
+  title: 'Settings'
+  base_route: mi_entidad.settings
+
+mi_entidad.view:
+  route_name: mi_entidad.view
+  base_route: mi_entidad.view
+  title: 'View'
+
+mi_entidad.edit:
+  route_name: mi_entidad.edit
+  base_route: mi_entidad.view
+  title: Edit
+
+mi_entidad.delete_confirm:
+  route_name:  mi_entidad.delete
+  base_route:  mi_entidad.view
+  title: Delete

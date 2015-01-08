@@ -1,0 +1,22 @@
+{#
+/**
+ * @file mi_entidad.html.twig
+ * Default theme implementation to present MiEntidad data.
+ *
+ * This template is used when viewing a mi_entidad entity's page,
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_mi_entidad()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('mi_entidad') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

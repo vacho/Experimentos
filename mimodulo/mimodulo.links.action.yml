@@ -1,0 +1,6 @@
+mi_entidad.add:
+  route_name: mi_entidad.add
+  title: 'Add MiEntidad'
+  appears_on:
+    - mi_entidad.list
+    - mi_entidad.view

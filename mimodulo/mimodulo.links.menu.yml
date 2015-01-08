@@ -1,0 +1,11 @@
+# MiEntidad menu items definition
+mi_entidad.list:
+  title: 'MiEntidad: Listing'
+  route_name: mi_entidad.list
+  description: 'List MiEntidad'
+
+mi_entidad.admin.structure.settings:
+  title: MiEntidad Settings
+  description: 'Configure MiEntidad entity'
+  route_name:  mi_entidad.settings
+  parent: system.admin_structure
